@@ -1,0 +1,102 @@
+.delivery-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 12px 40px;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* === LOGO === */
+.logo-section h2 {
+  font-size: 22px;
+  font-weight: 700;
+}
+.logo-section .highlight {
+  color: #f26b0f;
+}
+
+/* === RIGHT CONTROLS === */
+.right-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* === ONLINE/OFFLINE BUTTON === */
+.status-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border: 2px solid transparent;
+}
+
+/* Online mode */
+.status-toggle.online {
+  background: #eaffe4;
+  color: #3cb043;
+  border-color: #3cb043;
+}
+
+/* Offline mode */
+.status-toggle.offline {
+  background: #ffeaea;
+  color: #d93025;
+  border-color: #d93025;
+}
+
+.status-toggle:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Dot indicator */
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+/* === SWITCH & LOGOUT === */
+.switch-btn {
+  background: #f26b0f;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.switch-btn:hover {
+  background: #d85c0e;
+  transform: translateY(-1px);
+}
+
+.logout-btn {
+  background: transparent;
+  border: 2px solid #f26b0f;
+  color: #f26b0f;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.logout-btn:hover {
+  background: #f26b0f;
+  color: white;
+}

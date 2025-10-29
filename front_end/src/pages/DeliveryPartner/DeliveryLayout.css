@@ -1,0 +1,112 @@
+/* ====== PAGE GRID ====== */
+.delivery-layout {
+  display: flex;
+  min-height: 100vh; /* 👈 allows content to expand */
+  background-color: #f9f9f9;
+  overflow-y: auto; /* 👈 enables vertical scrolling */
+  overflow-x: hidden;
+}
+
+
+/* ====== SIDEBAR ====== */
+.delivery-sidebar {
+  width: 240px;
+  background: linear-gradient(to bottom, #fffaf5, #fff);
+  border-right: 1px solid #f3e3d9;
+  padding: 25px;
+  flex-shrink: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.delivery-sidebar h3 {
+  color: #f26b0f;
+  font-weight: 700;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.delivery-menu button {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 12px 18px;
+  font-size: 16px;
+  text-align: left;
+  cursor: pointer;
+  color: #333;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: 0.3s ease;
+}
+
+.delivery-menu button:hover,
+.delivery-menu button.active {
+  background: #ffe8d9;
+  color: #f26b0f;
+  font-weight: 600;
+}
+
+/* ====== MAIN AREA ====== */
+.delivery-main {
+  flex: 1;
+  margin-left: 240px; /* Offset sidebar */
+  background: #f9f9f9;
+  min-height: 100vh;
+  padding: 100px 40px 40px;
+  display: block; /* fix: prevent flex squeeze */
+}
+
+/* ====== DELIVERY HOME CONTENT ====== */
+.delivery-home {
+  max-width: 900px;
+  margin: 0 auto; /* center horizontally */
+}
+
+/* ====== WELCOME CARD ====== */
+.delivery-welcome {
+  background: #fff7f2;
+  border: 1px solid #ffe0cc;
+  border-radius: 12px;
+  padding: 25px 35px;
+  max-width: 650px;
+  text-align: center;
+  margin: 0 auto 30px auto;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in-out;
+}
+
+.delivery-welcome:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.delivery-welcome h3 {
+  color: #f26b0f;
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.delivery-welcome p {
+  color: #555;
+  font-size: 14px;
+}
+
+/* ====== DASHBOARD ====== */
+.delivery-dashboard {
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto 20px;
+}
+
+.delivery-dashboard h2 {
+  color: #f26b0f;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 10px;
+}

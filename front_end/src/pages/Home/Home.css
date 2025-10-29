@@ -1,0 +1,33 @@
+.home {
+  padding: 1rem;
+}
+.partner-toggle {
+  text-align: center;
+  margin: 60px 0;
+  background: #fff8f3;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.partner-toggle h3 {
+  color: #f26b0f;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.partner-btn {
+  background-color: #f26b0f;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.partner-btn:hover {
+  background-color: #ff8c33;
+  transform: translateY(-2px);
+}
